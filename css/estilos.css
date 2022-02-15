@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: grid;
+    /* height: 100vh; */
+    grid-gap: 10px;
+    grid-template-areas: 
+    "header header header"
+    ". contenido ."
+    "footer footer footer";
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 0.1fr 5fr 0.2fr;
+  
+}
+
+
+/* Header */
+
+header {
+    grid-area: header
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #89cee1; 
+}
+.menu { 
+    display: flex;
+}
+.header__titulos {
+    font-family: 'Arima Madurai', cursive;
+    margin: 1rem;
+}
+
+header li{
+    list-style: none;
+    text-align:center;
+    color:#fff; 
+}
+
+header a{
+    text-decoration:none;
+    color:inherit;
+    font-size:30px;
+}
+
+header li a {
+    padding: 20px;
+}
+
+header li:hover{
+        color:#000;
+}
+
+/* body */
+
+body{
+    background-image: url(../img/fondo1.jpg);
+}
+
+.container {
+    width: 1200px;
+    display:block;
+    margin:auto;
+}
+
+article {
+    grid-area: contenido;
+    transition: box-shadow 0.3s ease;
+    background-color: rgb(255, 255, 255);
+    margin: 1rem;
+    border-radius: 0.5rem;
+    
+}
+
+.post, h3, p{
+    padding: 10px;
+}
+
+section article:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+}
+
+section article h2, section article p {
+    font-family: 'Montserrat', sans-serif;
+    margin: 1rem; 
+}
+
+.img {
+    display:block;
+    margin:auto;
+}
+
+.namaste {
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    
+}
+
+.foto3 {
+    display: block;
+    margin: 14px auto;
+}
+
+.titulos  {
+    text-align: center;
+}
+
+.subtitulos {
+    text-align: center;
+}
+
+.img {
+    width: 600px;
+}
+
+
+.vid1 {
+    width: 600px;
+}
+
+.videos {
+    text-align: center;
+}
+
+/* footer */
+
+footer {
+    grid-area: footer;
+    font-size: 1rem;
+    background-color: #1a7b99;
+    padding: 1rem;
+    color: white;
+}
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.izq {
+    padding-left: 30px;
+}
+.der {
+    padding-right: 30px;
+}
+.sub {
+    font-family: 'Caveat', cursive;
+    display:inline-block;
+    width:300px;
+    font-size: 17px;
+    text-align:center;
+    position:relative;
+}
+.der li {
+    list-style: none;
+    margin: 10px;
+}
+
+.der a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    font-size: 19px;
+    
+}
+.der a:hover {
+    color: cornflowerblue;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+    .head, .foot{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .menu { 
+        display:block;
+    }
+
+    .container {
+    width: 100%;
+    display:block;
+    margin:auto;
+    }
+
+    .formu {
+    width: 100%;
+    }
+  
+    .img {
+    width: 400px;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    .head, .foot{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .menu { 
+        display:block;
+    }
+
+    .container {
+    width: 100%;
+    }
+
+    .formu {
+    width: 100%;
+    }
+    
+    .post{
+        margin:0;
+    }
+    
+    .img {
+    width: 320px;
+    }
+    .vid1 {
+    width: 300px;
+    }
+   
+}
+
+/* FIN Media queries */
