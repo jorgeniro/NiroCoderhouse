@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
@@ -17,7 +19,9 @@
 <body>
 <main>
     <header class="head">
+            <div class="ani-logo">
             <img class="logo" src="../img/logo.jpg" width="150" alt="logo de yoga">
+            </div>
             <ul class="menu">
                 <li class="header__titulos"><a href="../index.html">INICIO</a></li> 
                 <li class="header__titulos"><a href="../vistas/sobremi.html">SOBRE MI</a></li>
@@ -45,7 +49,7 @@
         </article>
     </section>
     </article>
-    <footer class="foot">
+    <footer class="foot" data-aos="zoom-in">
         <div class="izq">
             <h2>Suscríbete. </h2>
             <h3> Registrate con tu correo electrónico para recibir noticias y regalos especiales </h3>
@@ -66,7 +70,10 @@
                 <li><a href="http://youtube.com"> Youtube</a></li>
             </ul>
         </div>
-    </footer>  
+    </footer> 
+    <script>
+        AOS.init();
+    </script> 
 </main>    
 </body>
 </html>
