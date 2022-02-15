@@ -56,6 +56,7 @@ header li a {
 
 header li:hover{
         color:#000;
+        transform: scale(1.5);
 }
 
 .ani-logo {
@@ -290,6 +291,11 @@ footer {
         background: linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(242,242,242,1) 10%, rgba(137,206,225,1) 35%, rgba(137,206,225,1) 100%);
     }
 
+    header li:hover{
+        color:#000;
+        transform: scale(1.1);
+    }
+
     .foot {
         flex-direction: column;
         justify-content: space-between;
@@ -326,6 +332,12 @@ footer {
         background: rgb(242,242,242);
         background: linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(242,242,242,1) 18%, rgba(137,206,225,1) 35%, rgba(137,206,225,1) 100%);
     }
+
+    header li:hover{
+        color:#000;
+        transform: scale(1.1);
+    }
+
     .foot {
         flex-direction: column;
         justify-content: space-between;
