@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
@@ -8,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./Css/estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,12 +19,14 @@
 <body>
     <main>
         <header class="head">
-            <img class="logo" src="./img/logo.jpg" width="150" alt="logo de yoga">
+            <div class="ani-logo">
+                <img class="logo" src="./img/logo.jpg" width="150" alt="logo de yoga">
+            </div>
             <ul class="menu">
-                <li class="header__titulos"><a href="../index.html">INICIO</a></li> 
+                <li class="header__titulos"><a href="#">INICIO</a></li> 
                 <li class="header__titulos"><a href="./vistas/sobremi.html">SOBRE MI</a></li>
-                <li class="header__titulos"><a href="./vistas/CLASES.html">CLASES</a></li>
-                <li class="header__titulos"><a href="./vistas/CURSOS.html">CURSOS</a></li>
+                <li class="header__titulos"><a href="./vistas/clases.html">CLASES</a></li>
+                <li class="header__titulos"><a href="./vistas/cursos.html">CURSOS</a></li>
                 <li class="header__titulos"><a href="./vistas/contacto.html">CONTACTO</a></li>
             </ul>
         </header>  
@@ -49,7 +53,7 @@
             </section>
         </article>
         
-        <footer class="foot">
+        <footer class="foot" data-aos="zoom-in">
             <div class="izq">
                 <h2>Suscríbete. </h2>
                 <h3> Registrate con tu correo electrónico para recibir noticias y regalos especiales </h3>
@@ -57,7 +61,9 @@
                         <input class="sub" type="text" id="nombre" name="nombre" placeholder="escriba su nombre" required>
                         <input class="sub" type="text" id="apellido" name="apellido" placeholder="escriba su apellido" required>
                         <input class="sub" type="text" id="email" name="email" placeholder="escriba su correo electronico" required>
+                        <div class="heartbeat">
                         <button class="sub"type="submit">Suscribirse <sub></sub></button>
+                        </div>
                     </fieldset>
                 </form>
             </div>
@@ -72,6 +78,8 @@
             </div>
         </footer>
     </main>
-
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
