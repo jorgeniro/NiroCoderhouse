@@ -23,17 +23,17 @@ header {
     grid-area: header
 }
 
-.head {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: rgb(242,242,242);
     background: linear-gradient(90deg, rgba(242,242,242,1) 0%, rgba(242,242,242,1) 25%, rgba(137,206,225,1) 35%, rgba(137,206,225,1) 100%);
 }
-.menu { 
+.header__menu { 
     display: flex;
 }
-.header__titulos {
+.header__menu__titulos {
     font-family: 'Arima Madurai', cursive;
     margin: 1rem;
 }
@@ -59,12 +59,12 @@ header li:hover{
         transform: scale(1.5);
 }
 
-.ani-logo {
-	-webkit-animation: ani-logo 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: ani-logo 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.header__logo__a {
+	-webkit-animation: header__logo__a 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: header__logo__a 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
- @-webkit-keyframes ani-logo {
+ @keyframes header__logo__a {
     0% {
       -webkit-transform: scaleX(0);
               transform: scaleX(0);
@@ -76,7 +76,7 @@ header li:hover{
       opacity: 1;
     }
   }
-  @keyframes ani-logo {
+  @keyframes aheader__logo__a {
     0% {
       -webkit-transform: scaleX(0);
               transform: scaleX(0);
@@ -111,7 +111,7 @@ article {
     
 }
 
-.post, h3, p{
+.container__post, h3, p{
     padding: 10px;
 }
 
@@ -124,9 +124,10 @@ section article h2, section article p {
     margin: 1rem; 
 }
 
-.img {
+.container__img {
     display:block;
     margin:auto;
+    width: 600px;
 }
 
 .namaste {
@@ -141,16 +142,12 @@ section article h2, section article p {
     margin: 14px auto;
 }
 
-.titulos  {
+.container__titulos {
     text-align: center;
 }
 
-.subtitulos {
+.container__subtitulos {
     text-align: center;
-}
-
-.img {
-    width: 600px;
 }
 
 
@@ -158,7 +155,7 @@ section article h2, section article p {
     width: 600px;
 }
 
-.videos {
+.container__post__videos {
     text-align: center;
 }
 
@@ -172,15 +169,15 @@ footer {
     padding: 1rem;
     color: white;
 }
-.foot {
+.footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.izq {
+.footer__izq {
     padding-left: 30px;
 }
-.der {
+.footer__der {
     padding-right: 30px;
 }
 .sub {
@@ -191,20 +188,24 @@ footer {
     text-align:center;
     position:relative;
 }
-.der li {
+.footer__der li {
     list-style: none;
     margin: 10px;
 }
 
-.der a {
+.footer__der a {
     text-decoration: none;
     color: white;
     transition: color 0.3s ease;
     font-size: 19px;
     
 }
-.der a:hover {
+.footer__der a:hover {
     color: cornflowerblue;
+}
+
+.footer__redes {
+    margin-right: 50px;
 }
 
 .heartbeat {
@@ -296,12 +297,12 @@ footer {
         transform: scale(1.1);
     }
 
-    .foot {
+    .footer {
         flex-direction: column;
         justify-content: space-between;
     }
 
-    .menu { 
+    .header__menu { 
         display:block;
     }
 
@@ -315,14 +316,16 @@ footer {
     width: 100%;
     }
   
-    .img {
+    .container__img {
     width: 400px;
     }
     footer {
         background: rgb(242,242,242);
         background: linear-gradient(180deg, rgba(137,206,225,1) 0%, rgba(137,206,225,1) 35%, rgba(137,206,225,1) 100%);
     }
-    
+    .footer__redes {
+        margin-right: 0px;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -338,11 +341,11 @@ footer {
         transform: scale(1.1);
     }
 
-    .foot {
+    .footer {
         flex-direction: column;
         justify-content: space-between;
     }
-    .menu { 
+    .header__menu { 
         display:block;
     }
 
@@ -354,11 +357,11 @@ footer {
     width: 100%;
     }
     
-    .post{
+    .container__post{
         margin:0;
     }
     
-    .img {
+    .container__img {
     width: 320px;
     }
     .vid1 {
@@ -367,6 +370,9 @@ footer {
     footer {
         background: rgb(242,242,242);
         background: linear-gradient(180deg, rgba(137,206,225,1) 0%, rgba(137,206,225,1) 35%, rgba(137,206,225,1) 100%);
+    }
+    .footer__redes {
+        margin-right: 0px;
     }
     
 }
