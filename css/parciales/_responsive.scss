@@ -1,0 +1,102 @@
+
+
+/* Media queries */
+
+@media screen and (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        justify-content: space-between;
+        background: rgb(242,242,242);
+        background: linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(242,242,242,1) 10%, rgba(137,206,225,1) 35%, rgba(137,206,225,1) 100%);
+    }
+
+    header li:hover{
+        color:#000;
+        transform: scale(1.1);
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .header__menu { 
+        display:block;
+    }
+
+    .container__section {
+    width: 100%;
+    display:block;
+    margin:auto;
+    }
+
+    .formu {
+    width: 100%;
+    }
+  
+    .container__img {
+    width: 400px;
+    }
+    footer {
+        background: rgb(242,242,242);
+        background: linear-gradient(180deg, rgba(137,206,225,1) 0%, rgba(137,206,225,1) 35%, rgba(137,206,225,1) 100%);
+    }
+    .footer__redes {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .head{
+        flex-direction: column;
+        justify-content: space-between;
+        background: rgb(242,242,242);
+        background: linear-gradient(180deg, rgba(242,242,242,1) 0%, rgba(242,242,242,1) 18%, rgba(137,206,225,1) 35%, rgba(137,206,225,1) 100%);
+    }
+
+    header li:hover{
+        color:#000;
+        transform: scale(1.1);
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .header__menu { 
+        display:block;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container__section {
+    width: 100%;
+    }
+
+    .formu {
+    width: 100%;
+    }
+    
+    .container__post{
+        margin:0;
+    }
+    
+    .container__img {
+    width: 320px;
+    }
+    .vid1 {
+    width: 300px;
+    }
+    footer {
+        background: rgb(242,242,242);
+        background: linear-gradient(180deg, rgba(137,206,225,1) 0%, rgba(137,206,225,1) 35%, rgba(137,206,225,1) 100%);
+    }
+    .footer__redes {
+        margin-right: 0px;
+    }
+    
+}
+
+/* FIN Media queries */

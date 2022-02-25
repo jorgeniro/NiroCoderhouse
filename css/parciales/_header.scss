@@ -1,0 +1,72 @@
+
+
+/* Header */
+
+header {
+    grid-area: header
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $back-head;
+
+    &__logo__a {
+        -webkit-animation: header__logo__a 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: header__logo__a 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+    
+     @keyframes header__logo__a {
+        0% {
+          -webkit-transform: scaleX(0);
+                  transform: scaleX(0);
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: scaleX(1);
+                  transform: scaleX(1);
+          opacity: 1;
+        }
+      }
+      @keyframes aheader__logo__a {
+        0% {
+          -webkit-transform: scaleX(0);
+                  transform: scaleX(0);
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: scaleX(1);
+                  transform: scaleX(1);
+          opacity: 1;
+        }
+      }
+      &__menu { 
+        display: flex;
+        &__titulos {
+            font-family: 'Arima Madurai', cursive;
+            margin: 1rem;
+            &__a {
+                text-decoration:none;
+                color:inherit;
+                font-size:2rem;
+                padding: 20px;
+            }
+        }
+    }
+    &__menu__titulos {
+        list-style: none;
+    text-align:center;
+    color:$color-menu; 
+    }
+    &__menu__titulos:hover {
+        color:$negro;
+        transform: scale(1.5);
+    
+    }
+}
+
+
+
+
+
